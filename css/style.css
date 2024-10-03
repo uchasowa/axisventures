@@ -319,6 +319,7 @@ header a:hover {
     padding: 5px 30px 15px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
+    min-height: 93px;
 }
 
 .whatWeDo .boxes .box .footer p {

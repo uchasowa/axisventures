@@ -112,11 +112,35 @@ header .container {
     margin-right: auto;
 }
 
+header .logo {
+    background: #fff !important;
+}
+
 header .logo img {
     width: 130px;
 }
 
-header a {
+/* Bulletproof override for header logo link */
+header .logo a {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    display: inline-block;
+}
+header .logo a:hover,
+header .logo a:active,
+header .logo a:focus {
+    background: none !important;
+    border: none !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+
+header .contact-btn {
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
     color: #ffffff;
@@ -128,7 +152,7 @@ header a {
     font-size: 15px;
 }
 
-header a:hover {
+header .contact-btn:hover {
     background-color: #ffffff;
     color: var(--main-color);
 }
@@ -318,8 +342,11 @@ header a:hover {
     padding: 5px 30px 15px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
-    min-height: 93px;
+    min-height: 110px;
     margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .whatWeDo .boxes .box .footer p {
@@ -715,4 +742,23 @@ footer .copyRight {
     .team .boxes .box {
         min-height: auto;
     }
+}
+
+.logo-link {
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    color: inherit !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline-block;
+    text-decoration: none !important;
+}
+.logo-link:hover, .logo-link:active, .logo-link:focus {
+    background: none !important;
+    border: none !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
 }
